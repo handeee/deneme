@@ -10,7 +10,6 @@ export default class CategoryList extends Component {
 render() {
     return (
       <div>     
-        <h2>{this.state.counter}</h2>
         <ListGroup>
             {this.state.categories.map(category=>(
               <ListGroupItem key={category.categoryıd} onClick={()=>this.props.changeCategory(category)}>{category.categoryname}</ListGroupItem>

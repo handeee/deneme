@@ -9,12 +9,11 @@ export default class App extends Component {
   state={
     currentCategory:""
   }
-  changeCategorty=category=>{
+  changeCategory=category=>{
     this.setState({currentCategory:category.categoryname})
   };
   render() {
     let infot="abc";
-   
     return (
       <div className="App">
         <Container>
@@ -23,7 +22,7 @@ export default class App extends Component {
           </Row>
           <Row>
             <Col>
-            <CategoryList  currentCategory={this.state.currentCategory} changeCategory={this.changeCategory}    xs="3"/>
+            <CategoryList  currentCategory={this.state.currentCategory} changeCategory={this.changeCategory} xs="3"/>
             </Col>
            <Col>
              <ProductList currentCategory={this.state.currentCategory} xs="9" />
