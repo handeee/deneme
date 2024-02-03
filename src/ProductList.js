@@ -5,8 +5,9 @@ export default class ProductList extends Component {
    
   render() {
     return (
-      <div>ProductList-{this.props.info}
+      <div>ProductList
       <h2>{this.state.counter}</h2>
+      {this.props.currentCategory}
       </div>
     )
   }
