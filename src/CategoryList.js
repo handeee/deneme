@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { ListGroupItem,ListGroup } from "reactstrap";
 export default class CategoryList extends Component {
   state={
-    categories:[ ]
+    categories:[]
 };
-
 componentDidMount(){
   this.getCategories();
 }
